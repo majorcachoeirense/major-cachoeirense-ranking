@@ -2,7 +2,7 @@
 // Pode haver qualquer quantidade de jogadores.
 
 const PLAYERS = [
-   "MUZZI - P22k/GC15",
+  "MUZZI - P22k/GC15",
   "TTZ - P25K/GC14",
   "SPP - P21K/GC14",
   "PHAP - P20K/GC15",
@@ -29,6 +29,6 @@ const PLAYERS = [
   "Mts.K1ng7 - P13K/GC09",
   "Mrf - P24K/GC16",
   "Rand27 - SEM RANK/GC14",
-  "Player29 - PxxK/GCxx",
+  "Fendz. - P9K/GC07",
   "Player30 - PxxK/GCxx"
 ];

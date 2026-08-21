@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080a0e">
+<title>Ranking de Players — Major Cachoeirense</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main class="shell">
+<header class="hero">
+  <div class="brand">MAJOR <span>CACHOEIRENSE</span></div>
+  <div class="eyebrow">RANKING DE PLAYERS</div>
+  <h1>Quem são os melhores?</h1>
+  <p class="subtitle">Monte seu ranking do melhor para o pior player do campeonato.</p>
+</header>
+
+<section id="identity" class="panel">
+  <h2>1. Identifique-se</h2>
+  <p class="muted">Não é necessário criar conta. Informe seus dados para registrar seu voto.</p>
+  <label>Nome
+    <input id="voterName" type="text" maxlength="80" autocomplete="name" placeholder="Seu nome">
+  </label>
+  <label>Nick
+    <input id="voterNick" type="text" maxlength="40" autocomplete="nickname" placeholder="Seu nick no camp">
+  </label>
+  <button id="startBtn" class="primary">COMEÇAR RANKING</button>
+  <p id="identityError" class="error" aria-live="polite"></p>
+</section>
+
+<section id="ranking" class="panel hidden">
+  <div class="ranking-head">
+    <div><div class="eyebrow">2. SEU RANKING</div><h2>Escolha o player e a posição</h2></div>
+    <div id="progress" class="progress">0/0</div>
+  </div>
+  <div class="instructions"><strong>Como votar:</strong> toque em um player e depois escolha a posição que ele merece. Você pode alterar qualquer posição antes de enviar.</div>
+  <div id="playersGrid" class="players-grid"></div>
+
+  <div id="positionPicker" class="picker hidden">
+    <div class="picker-title">Posição para <strong id="selectedPlayer"></strong></div>
+    <div id="positionsGrid" class="positions-grid"></div>
+    <button id="cancelPick" class="secondary">CANCELAR</button>
+  </div>
+
+  <div class="ranking-preview">
+    <div class="preview-head"><h3>Seu ranking</h3><button id="clearBtn" class="text-btn">Limpar</button></div>
+    <div id="rankingList" class="ranking-list"></div>
+  </div>
+  <button id="reviewBtn" class="primary" disabled>REVISAR RANKING</button>
+  <p id="rankingError" class="error" aria-live="polite"></p>
+</section>
+
+<section id="review" class="panel hidden">
+  <div class="eyebrow">3. CONFIRA ANTES DE ENVIAR</div>
+  <h2>Seu ranking está correto?</h2>
+  <div id="reviewIdentity" class="review-identity"></div>
+  <div id="reviewList" class="ranking-list"></div>
+  <div class="actions">
+    <button id="backBtn" class="secondary">VOLTAR</button>
+    <button id="sendBtn" class="primary">ENVIAR RANKING</button>
+  </div>
+  <p id="sendError" class="error" aria-live="polite"></p>
+</section>
+
+<section id="success" class="panel success hidden">
+  <div class="success-icon">✓</div>
+  <div class="eyebrow">RANKING ENVIADO</div>
+  <h2>Obrigado por participar!</h2>
+  <p>Seu ranking foi registrado com sucesso.</p>
+</section>
+
+<footer>Major Cachoeirense • Ranking de Players</footer>
+</main>
+<script src="assets/players.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

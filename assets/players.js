@@ -30,5 +30,5 @@ const PLAYERS = [
   "Mrf - P24K/GC16",
   "Rand27 - SEM RANK/GC14",
   "Fendz. - P9K/GC07",
-  "Highlander - P22K/GC17"
+  "FishPeixe (Mamatsuki) - P13K/GC12"
 ];

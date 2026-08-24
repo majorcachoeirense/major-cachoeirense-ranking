@@ -16,5 +16,5 @@ const PLAYERS = [
   "LUCAS MCV",
   "ADZZ7",
   "SPDR",
-  "JOEY",
+  "JOEY"
 ];
